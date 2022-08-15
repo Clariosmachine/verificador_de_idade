@@ -1,0 +1,23 @@
+body {
+    background-color: cadetblue;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#title {
+    text-align: center;
+}
+
+form {
+    font-style: oblique;
+    background-color: whitesmoke;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 12pt;
+    padding: 1.5em;
+}
+
+#inputGen {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
