@@ -9,15 +9,34 @@ body {
 
 form {
     font-style: oblique;
+    font-size: larger;
     background-color: whitesmoke;
     max-width: 400px;
     margin: auto;
     border-radius: 12pt;
-    padding: 1.5em;
+    /*padding: 1.5em 0.5em 1.5em 2em;*/
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#inputIdade {
+    display: flex;
+    justify-content: stretch;
+    padding: 1.5em 0 0 1em;
+}
+
+#anoNasc {
+    width: 6em;
+    margin-left: 3em;
 }
 
 #inputGen {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: stretch;
+}
+
+#inputGen p {
+    margin-right: 1.8em;
+    padding-left: 1em;
 }

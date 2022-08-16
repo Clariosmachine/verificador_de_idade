@@ -13,15 +13,18 @@
         <form id="formulario1" action="/">
             <div id="inputIdade">
                 <label for="anoNasc">Informe o ano de nascimento:</label>
-                <input type="number" name="anoNasc" id="anoNasc" min="1900">
+                <input type="number" name="anoNasc" id="anoNasc" min="1900" max="2021" value="1987">
             </div>
             <div id="inputGen">
                 <p>Informe o sexo:</p>
-                <label for="sexo">Masculino</label>
-                <input type="radio" name="sexo" class="inputValue" value="m">
-                <label for="sexo">Feminino</label>
-                <input type="radio" name="sexo" class="inputValue" value="f">
+                <div id="inputValues">
+                    <input type="radio" name="sexo" class="inputValue" value="m">
+                    <label for="sexo">Masculino</label>
+                    <input type="radio" name="sexo" class="inputValue" value="f">
+                    <label for="sexo">Feminino</label>
+                </div>
             </div>
+            <button id="botaoChecar" type="submit">Checar</button>
         </form>
         <img src="" alt="">
     </section>
