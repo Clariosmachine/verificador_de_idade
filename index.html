@@ -10,20 +10,23 @@
 <body>
     <h1 id="title">Verificador de Idade</h1>
     <section>
-        <form id="formulario1" action="/">
+        <form method="post" id="formulario1" action="window">
             <div id="inputIdade">
                 <label for="anoNasc">Informe o ano de nascimento:</label>
-                <input type="number" name="anoNasc" id="anoNasc" min="1900" max="2021" value="1987">
+                <input required type="number" name="anoNasc" id="anoNasc" min="1900" max="2021" placeholder="Ano Nasc.">
             </div>
             <div id="inputGen">
                 <p>Informe o sexo:</p>
                 <div id="inputValues">
-                    <input type="radio" name="sexo" class="inputValue" value="m">
-                    <label for="sexo">Masculino</label>
-                    <input type="radio" name="sexo" class="inputValue" value="f">
-                    <label for="sexo">Feminino</label>
+                    <label for="sexo">
+                        <input required type="radio" name="sexo" class="inputValue" value="masculino">
+                    Masculino</label>
+                    <label for="sexo">
+                        <input required type="radio" name="sexo" class="inputValue" value="feminino">
+                    Feminino</label>                    
                 </div>
             </div>
+            <!--<input id="botaoChecar" type="button" value="Checar">-->
             <button id="botaoChecar" type="submit">Checar</button>
         </form>
         <img src="" alt="">
