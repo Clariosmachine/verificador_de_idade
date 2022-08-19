@@ -1,6 +1,7 @@
 body {
     background-color: cadetblue;
     font-family: Calibri, 'Trebuchet MS', sans-serif;
+    color: whitesmoke;
 }
 
 #title {
@@ -8,6 +9,7 @@ body {
 }
 
 form {
+    color: rgb(43, 71, 72);
     font-style: oblique;
     font-size: larger;
     background-color: whitesmoke;
@@ -17,6 +19,7 @@ form {
     /*padding: 1.5em 0.5em 1.5em 2em;*/
     text-align: center;
     box-sizing: border-box;
+    padding-bottom: 0.5em;
 }
 
 #inputIdade {
@@ -39,4 +42,18 @@ form {
 #inputGen p {
     margin-right: 1.8em;
     padding-left: 1em;
+}
+
+#divRes {
+    margin: auto;
+    font-style: oblique;
+    font-size: 1.5em;
+    text-align: center;
+    max-width: 400px;
+}
+
+#divRes img {
+    max-width: 100%;
+    max-height: auto;
+    object-fit: none;
 }
