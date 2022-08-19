@@ -28,30 +28,30 @@ function checarIdade() {
     if (genero == 'feminino') {
         if (idade >= 0 && idade <= 17) {
             divRes.innerHTML = `<p>Pessoa identificada como uma menina com ${idade} anos de idade.</p>
-            <img src="/imgs/menina.png" alt="Imagem de Menina">`
+            <img src="./imgs/menina.png" alt="Imagem de Menina">`
         }
         else if (idade >= 18 && idade <= 59) {
             divRes.innerHTML = `<p>Pessoa identificada como uma mulher com ${idade} anos de idade.</p>
-            <img src="/imgs/adulta.png" alt="Imagem de Mulher">`
+            <img src="./imgs/adulta.png" alt="Imagem de Mulher">`
         }
         else {
             divRes.innerHTML = `<p>Pessoa identificada como uma idosa com ${idade} anos de idade.</p>
-            <img src="/imgs/idosa.png" alt="Imagem de Idosa">`
+            <img src="./imgs/idosa.png" alt="Imagem de Idosa">`
         }
     }
     
     else {
         if (idade >= 0 && idade <= 17) {
             divRes.innerHTML = `<p>Pessoa identificada como um menino com ${idade} anos de idade.</p>
-            <img src="/imgs/menino.png" alt="Imagem de Menino">`
+            <img src="./imgs/menino.png" alt="Imagem de Menino">`
         }
         else if (idade >= 18 && idade <= 59) {
             divRes.innerHTML = `<p>Pessoa identificada como um homem com ${idade} anos de idade.</p>
-            <img src="/imgs/adulto.png" alt="Imagem de Homem">`
+            <img src="./imgs/adulto.png" alt="Imagem de Homem">`
         }
         else {
             divRes.innerHTML = `<p>Pessoa identificada como um idoso com ${idade} anos de idade.</p>
-            <img src="/imgs/idoso.png" alt="Imagem de Idoso">`
+            <img src="./imgs/idoso.png" alt="Imagem de Idoso">`
         }
     }
 
