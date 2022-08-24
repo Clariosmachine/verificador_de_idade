@@ -10,7 +10,7 @@ botaoChecar.addEventListener('click', checarIdade)
 function checarIdade() {
     var anoNasc = campoAnoNasc.value
     if (anoNasc == '' || Number(anoNasc) < 1900 || Number(anoNasc) > Number(anoCorrente)) {  // verificando se o campo está em branco
-        window.alert('Idade digitada inválida!');
+        window.alert('Ano de nascimento inválido!');
         return '';
     }  // adicionar verificação de valores errados e alertas para o caso
      
