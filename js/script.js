@@ -59,10 +59,27 @@ function checarIdade() {
     document.getElementsByTagName('body')[0].appendChild(divRes)
     
     botaoChecar.setAttribute('disabled', '')  // desabilita o botão
+
+    var botaoReset = document.createElement('button')
+    botaoReset.innerText = 'Resetar'
+    botaoReset.setAttribute('type', 'button')
+    form.appendChild(botaoReset)
+    botaoReset.addEventListener('click', resetar)
 }
 
-/*
-pode ser adicionado um botão de resete que limparia os valores
-de genero e ano de nascimento, além de habilitar o botão de checar
-e sumir
-*/
+function resetar() {
+    botaoChecar.removeAttribute('disabled')
+    campoAnoNasc.value = ''
+    var generos = document.getElementsByName('sexo')
+   /* desse modo fica travado em dois valores:
+    generos[0].checked = false
+    generos[1].checked = false
+    */
+    generos.forEach(uncheck)  // dessa forma consigo alterar todos os valores da lista
+    function uncheck(indice){
+    indice.checked = false
+   }
+    
+    form.removeChild(form.getElementsByTagName('button')[1])
+    document['body'].removeChild(document.getElementById('divRes'))
+}
